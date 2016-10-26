@@ -1,0 +1,41 @@
+How did viewing a diff between two versions
+of a file help you see the bug that was 
+introduced?  Hmm, it slowed down my reading,
+and gave me places to focus on the differences.
+^^^^^^^^^^^
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+It lets me see the evolution of my thinking, and also preserves everything that I might otherwise unwisely throw out.
+^^^^^^^^^^^^^
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+Pros: executable code after each logical change
+Cons: higher likelyhood of user error
+*******
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Because of files that are related to/dependent on each other.
+*********
+important to compare diff OLD NEW in order for colors and -/+ signs to accurately reflect changes between the OLD and NEW commits
+**********
+git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -n -w"
+
+# Enable tab completion
+source ~/git-completion.bash
+
+# colors!
+green="\[\033[0;32m\]"
+blue="\[\033[0;34m\]"
+purple="\[\033[0;35m\]"
+reset="\[\033[0m\]"
+
+# Change command prompt
+source ~/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+# '\u' adds the name of the current user to the prompt
+# '\$(__git_ps1)' adds git-related stuff
+# '\W' adds the name of the current directory
+export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
+
+alias subl="C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
+
+*************
+Yay!  I successfully used sublime to modify the "bash profile" 
+hidden file, and can now launch Sublime 3 right from Bash!
