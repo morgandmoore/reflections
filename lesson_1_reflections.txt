@@ -39,3 +39,5 @@ alias subl="C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
 *************
 Yay!  I successfully used sublime to modify the "bash profile" 
 hidden file, and can now launch Sublime 3 right from Bash!
+
+*excited about lesson 2
